@@ -46,7 +46,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		sbcl498ux178SAnsj8Ah7o/vVYM=
+		qFe4ffma3Yz2BURyVseR6X9TXqc=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -54,15 +54,15 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		eUrmAVniIhQUBw3pY2oXSVHyzbY=
+		9+9kUAU3hGnSBCHj0Rqr7CCXTmQ=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
 		<data>
-		xE3+9weuv9GtG3B8yv80w7EBjZk=
+		6aKw7Nxzm+GhO8Oy6OViH2fasBo=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<data>
-		fv+j1XSywAP2ZTvvVFJDWh3ch3I=
+		KA9Oy11K6vNdWQghpC0OB4261vw=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/NOTICES.Z</key>
 		<data>
-		QEh1NnP/H1dMg7bf6TXKVwXVx3w=
+		Ttyi6ON8NsW1fvaTjAbOqvi2Kzc=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/NativeAssetsManifest.json</key>
 		<data>
@@ -108,6 +108,34 @@
 		<data>
 		NyyN2rjPZH85paqWpt7lJsFvlZE=
 		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/icons/back_icon.svg</key>
+		<data>
+		Wv9bn/48rpvwG69X6ScH+VD534s=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/icons/behavioral_therapy_icon.png</key>
+		<data>
+		82AzJGziUL7Dr9YqlH7vo6AAV+c=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/icons/chat_with_ai_icon.png</key>
+		<data>
+		yvv92S32Wai7c2SEYdTvMoqFEXM=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/icons/personal_dashboard_icon.png</key>
+		<data>
+		g5ibPuIyYmwX+F34dBKJH1hM3ns=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/icons/star_badge_icon.png</key>
+		<data>
+		VZLC5ZboTaEchHJlTVs7wOPFe68=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/images/curatrail_logo.png</key>
+		<data>
+		JY6d7bqwKfRx56Xpq8a5ZNh50Ew=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/images/curatrail_text.svg</key>
+		<data>
+		abEnO6ezfQn17Ns+6uq6+YWUX+M=
+		</data>
 		<key>Frameworks/App.framework/flutter_assets/fonts/MaterialIcons-Regular.otf</key>
 		<data>
 		/CUoTuPQqqdexfyOT9lpJhV+2MQ=
@@ -118,7 +146,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/kernel_blob.bin</key>
 		<data>
-		QuOCcr6FGKbqJb675fOxvrs3R64=
+		zUz0Lhu3pzaKbFLsAG5sDR79S+Y=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -228,26 +256,6 @@
 		<data>
 		ipm8hg7aB3LzsfShJfpNR0QQ4hw=
 		</data>
-		<key>Frameworks/path_provider_foundation.framework/Info.plist</key>
-		<data>
-		HpVKY3H6g7iO2YmOieoHtvy1ZeI=
-		</data>
-		<key>Frameworks/path_provider_foundation.framework/_CodeSignature/CodeResources</key>
-		<data>
-		MU4nFFj3ZRVNmyWf0e2hMM/wf7Q=
-		</data>
-		<key>Frameworks/path_provider_foundation.framework/path_provider_foundation</key>
-		<data>
-		GmW1FDye74wj5F+Q8T6LSN/mGSI=
-		</data>
-		<key>Frameworks/path_provider_foundation.framework/path_provider_foundation_privacy.bundle/Info.plist</key>
-		<data>
-		29+tf9UNrLYHgUAQVXT4KwVWja4=
-		</data>
-		<key>Frameworks/path_provider_foundation.framework/path_provider_foundation_privacy.bundle/PrivacyInfo.xcprivacy</key>
-		<data>
-		/LX0ZlwxwIAIhjZaDB8EiH5KpXA=
-		</data>
 		<key>Info.plist</key>
 		<data>
 		wEX5GuSyk7WffYNF7hHJjaL7JFE=
@@ -258,7 +266,7 @@
 		</data>
 		<key>Runner.debug.dylib</key>
 		<data>
-		5KRmKuFMKMEb5RZv3aKcTE9x1Lg=
+		8XpFKrfOG+qjcrBJ3Pqk1pIoGwk=
 		</data>
 		<key>__preview.dylib</key>
 		<data>
@@ -341,7 +349,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HZdcMHQ0Ew62B8imlYcP0MVQQeK9jJkbjan7eNIBtTQ=
+			dt5ZxAvNFjNTP1pf4IVURbGG76q7JAZd0doAkjUb0gQ=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -355,21 +363,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XzlH5TwW4MMNmQ+tsdgh3Bza0S+e8oWjuNYEy6fgk3A=
+			h+CT8PwwIhLQs4z25y5Iebx9Sb4Z0X/FavhUk6YRmmw=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CjmgP+S3qAMV+WLuSkb9QUME+0u7K3ONOQbvSnVkdt4=
+			Qq+e7ccgPiIoblP1MAxJnI8bubcazvjbqKjyHW3W1us=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			u3u5EiZqLU4aIompFEM9Viev5K9mLtP+Tu0p+EAS9MU=
+			a4X/8Xoxo7K68ZVPUgY5bjaCgitQvoNce+kKmL3D2Zc=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
@@ -383,7 +391,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			k//GGA10dRp2Kn5hdSAKxYISmb0v7i496JqSkMKlK0M=
+			rLHdKYmwqrA/NAJhPKPH0PmXogyLLn8SeR53vTbI1vQ=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/NativeAssetsManifest.json</key>
@@ -449,6 +457,55 @@
 			ZjxVv+mjgnD/9E2ic79NeS6vw+fhIB9iwwZMrYDF1ec=
 			</data>
 		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/icons/back_icon.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			uCIn6ysWgjDkJDXWHhh2vq3NFJ/o/Q8b2cYCrVlHN2c=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/icons/behavioral_therapy_icon.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			88/6ivrrjHZXUiO9ENedvZ9brITXbqnb8MRP4dtugzQ=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/icons/chat_with_ai_icon.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			VZyEo/I9ZIseUUJCKVvKmaypx9dNenVskKpf7lJISGA=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/icons/personal_dashboard_icon.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			rqm4h3HiPZhvDtolMDhh+AYHKjGovn9g3gUC+oOdWp8=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/icons/star_badge_icon.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			HfgKpKUYUZS9SUXrY4ZM/Z/IuflnMME8jdWw+noJpx8=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/images/curatrail_logo.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			+nzOE9/3pjkD+BHzRlEWWlmB25/p0vR9WcaIEms4Z6I=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/images/curatrail_text.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			yxicjS2ubcZryZbv7I728zphaI6UzVc+9pK19wbRuyo=
+			</data>
+		</dict>
 		<key>Frameworks/App.framework/flutter_assets/fonts/MaterialIcons-Regular.otf</key>
 		<dict>
 			<key>hash2</key>
@@ -467,7 +524,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WEjIsVpZzCHp0RxEWUKgyk859G/8nYGfFN2pOAJ7vKU=
+			XHJ7B0/Uje9IDWdwXZQDJ6n3ODwx4pBkSGa9J9h/hOE=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
@@ -659,46 +716,11 @@
 			wSU3Ai74GJkae/7UGnbY1q6WL/vA5lEax2Kl0IRef3w=
 			</data>
 		</dict>
-		<key>Frameworks/path_provider_foundation.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			4A2uOm3aeqH0IAX0R3SEZn3qFxgKQyqGJifwDZVzNFk=
-			</data>
-		</dict>
-		<key>Frameworks/path_provider_foundation.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			56w4zk2VwicNrfWjzfXe4yVMrw9tZGq07e3/4LiCmHI=
-			</data>
-		</dict>
-		<key>Frameworks/path_provider_foundation.framework/path_provider_foundation</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			uAhFZ8EX2hEAzPmt2A6cSUNAbM2tg/K84OAs66VHTj4=
-			</data>
-		</dict>
-		<key>Frameworks/path_provider_foundation.framework/path_provider_foundation_privacy.bundle/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			EMJz/f3MESdxzP7P1uxeJObZoII/kxCmUIJDXXpNnf4=
-			</data>
-		</dict>
-		<key>Frameworks/path_provider_foundation.framework/path_provider_foundation_privacy.bundle/PrivacyInfo.xcprivacy</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			bS2g2NkwIn1CjB2TY7CtbjoS4sm2jFzilxWKdBL8jDE=
-			</data>
-		</dict>
 		<key>Runner.debug.dylib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Uz9Yl2etkrTuVz3MpvzTshX6esksmd8dYVk1iUIt8m8=
+			maCpF9vQ6tnCffxsx5wTsg0mgUUxE9mXWhWcwEPayys=
 			</data>
 		</dict>
 		<key>__preview.dylib</key>
