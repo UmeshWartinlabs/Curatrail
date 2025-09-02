@@ -1,0 +1,1 @@
+ /Users/apple/Documents/Projects/Curatrail/.dart_tool/flutter_build/1f4a38ccb3d8f443b9674c588c4b9792/dart_build_result.json: 
