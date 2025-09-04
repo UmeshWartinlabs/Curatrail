@@ -14,7 +14,7 @@ class CommonAppBar extends StatelessWidget implements PreferredSizeWidget {
   const CommonAppBar({
     super.key,
     this.title,
-    this.isHideBackButton = true,
+    this.isHideBackButton,
     this.isCuratrailTitle,
     this.leadingIcon,
     this.onTapLeading,
@@ -32,7 +32,7 @@ class CommonAppBar extends StatelessWidget implements PreferredSizeWidget {
                 title ?? "",
                 style: titleTextStyle ?? Get.textTheme.titleLarge!.copyWith(fontSize: 18),
               ),
-        leading: (isHideBackButton ?? false)
+        leading: (!(isHideBackButton ?? false))
             ? GestureDetector(
                 onTap: onTapLeading ?? () {
                   Get.back();
@@ -55,6 +55,7 @@ class CommonAppBar extends StatelessWidget implements PreferredSizeWidget {
         backgroundColor: AppColors.white,
         foregroundColor: AppColors.white,
         elevation: 0,
+        scrolledUnderElevation: 0,
       ),
     );
   }

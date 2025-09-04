@@ -1,5 +1,6 @@
 import 'package:curatrail/screens/onboarding/controller/onboarding_screen_controller.dart';
 import 'package:curatrail/utils/app_colors.dart';
+import 'package:curatrail/utils/app_routes.dart';
 import 'package:curatrail/utils/app_strings.dart';
 import 'package:curatrail/widgets/common_appbar.dart';
 import 'package:curatrail/widgets/common_button.dart';
@@ -15,7 +16,7 @@ class OnboardingScreen extends GetView<OnboardingScreenController> {
       appBar: PreferredSize(
         preferredSize: const Size.fromHeight(kToolbarHeight),
         child: Obx(() => CommonAppBar(
-          isHideBackButton: (controller.currentPageIndex.value != 0),
+          isHideBackButton: (controller.currentPageIndex.value == 0),
           onTapLeading: () {
             final currentPage = controller.pageController.page?.round() ?? 0;
             if (currentPage > 0) {
@@ -27,7 +28,9 @@ class OnboardingScreen extends GetView<OnboardingScreenController> {
             }
           },
           actionWidget: (controller.currentPageIndex.value == 3) ? SizedBox() : TextButton(
-              onPressed: () {},
+              onPressed: () {
+                Get.offAllNamed(AppRoutes.registrationScreen);
+              },
               child: Text(
                 AppStrings.skip.tr,
                 style: Get.textTheme.titleLarge?.copyWith(
@@ -123,7 +126,7 @@ class OnboardingScreen extends GetView<OnboardingScreenController> {
                             curve: Curves.easeInOut,
                           );
                         } else {
-                          print("index is over");
+                          Get.offAllNamed(AppRoutes.registrationScreen);
                         }
                       },
                     ),

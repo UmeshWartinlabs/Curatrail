@@ -1,13 +1,15 @@
+import 'package:curatrail/services/pref_service.dart';
 import 'package:curatrail/utils/app_colors.dart';
 import 'package:curatrail/utils/app_routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 
-void main() {
+Future<void> main() async {
 
   WidgetsFlutterBinding.ensureInitialized();
 
+  await PrefService.init();
 
   runApp(const MyApp());
 }

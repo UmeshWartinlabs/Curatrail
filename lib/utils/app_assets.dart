@@ -9,6 +9,10 @@ class AppAssets {
   static const onboardIcon2 = "${icons}behavioral_therapy_icon.png";
   static const onboardIcon3 = "${icons}chat_with_ai_icon.png";
   static const onboardIcon4 = "${icons}star_badge_icon.png";
+  static const infoIcon = "${icons}info_icon.svg";
+  static const emailVerificationIcon = "${icons}email_verification_icon.svg";
+  static const closeEyeIcon = "${icons}close_eye_icon.svg";
+  static const openEyeIcon = "${icons}open_eye_icon.svg";
 
   /// ------- images
   static const curatrailLogo = "${images}curatrail_logo.png";

@@ -8,7 +8,7 @@ class SplashScreenController extends GetxController {
   void onInit() {
 
     Future.delayed(Duration(seconds: 4), () {
-      Get.toNamed(AppRoutes.onboardingScreen);
+      Get.offAllNamed(AppRoutes.onboardingScreen);
     });
 
     // TODO: implement onInit
