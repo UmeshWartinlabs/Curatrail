@@ -44,7 +44,24 @@ class AppStrings {
 
   /// ----- create password
   static const password = "Password";
+  static const donTHaveAnAccount = "Don’t have an Account? ";
+  static const createAccount = "Create Account";
+  static const passwordCanNotBeEmpty = "Password cannot be empty";
+  static const passwordMustBe8Char = "Password must be at least 8 characters";
+  static const confirmPasswordCanNotBeEmpty = "Confirm Password cannot be empty";
+  static const confirmPasswordMustBe8Char = "Confirm Password must be at least 8 characters";
+  static const passwordsDoNotMatch = "Passwords do not match";
   static const confirmPassword = "Confirm Password";
   static const thankYouForVerification = "Thank you for verification of\nemail, Please create your\npassword.";
+  static const accountCreationSuccessful = "Account Creation Successful";
+  static const welcomeBackYouAreSignedIn = "Welcome back! You’re now signed in.";
+  static const enablingTouchID = "Enabling Touch ID will give you faster access to you information.";
+  static const youCanTurnOffThisInSetting = "you can this feature on or off at any time under settings.";
+  static const enablingFaceID = "Enabling Face ID will give you faster access to you information. ";
+  static const enable = "Enable";
+  static const notNow = "Not now";
+
+  /// ----- login
+  static const forgetPassword = "Forgot Password?";
 
 }

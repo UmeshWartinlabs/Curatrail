@@ -1,5 +1,6 @@
 import 'dart:io';
 import 'package:curatrail/screens/auth/create_password/controller/create_password_controller.dart';
+import 'package:curatrail/screens/auth/create_password/widgets/account_creation_bottomsheet.dart';
 import 'package:curatrail/utils/app_assets.dart';
 import 'package:curatrail/utils/app_colors.dart';
 import 'package:curatrail/utils/app_strings.dart';
@@ -111,6 +112,7 @@ class CreatePasswordScreen extends GetView<CreatePasswordController> {
                   title: AppStrings.register.tr,
                   onTapButton: () async {
                     if (controller.validatePasswords()) {
+                      await AccountCreationBottomSheet.show(context);
                       debugPrint("Validate");
                     }
                   },

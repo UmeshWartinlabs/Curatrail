@@ -1,7 +1,9 @@
+import 'package:curatrail/utils/app_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class CreatePasswordController extends GetxController {
+  static CreatePasswordController get to => Get.find();
 
   @override
   void onInit() {
@@ -9,6 +11,8 @@ class CreatePasswordController extends GetxController {
     emailController.text = Get.arguments;
     super.onInit();
   }
+
+  RxBool isFingerLockEnable = true.obs;
 
   RxBool isPasswordVisible = false.obs;
   RxBool isConfirmPasswordVisible = false.obs;
@@ -29,17 +33,17 @@ class CreatePasswordController extends GetxController {
     confirmPasswordError.value = "";
 
     if (password.isEmpty) {
-      passwordError.value = "Password cannot be empty";
+      passwordError.value = AppStrings.passwordCanNotBeEmpty.tr;
     } else if (password.length < 8) {
-      passwordError.value = "Password must be at least 8 characters";
+      passwordError.value = AppStrings.passwordMustBe8Char.tr;
     }
 
     if (confirmPassword.isEmpty) {
-      confirmPasswordError.value = "Confirm Password cannot be empty";
+      confirmPasswordError.value = AppStrings.confirmPasswordCanNotBeEmpty.tr;
     } else if (confirmPassword.length < 8) {
-      confirmPasswordError.value = "Confirm Password must be at least 8 characters";
+      confirmPasswordError.value = AppStrings.confirmPasswordMustBe8Char.tr;
     } else if (password != confirmPassword) {
-      confirmPasswordError.value = "Passwords do not match";
+      confirmPasswordError.value = AppStrings.passwordsDoNotMatch.tr;
     }
 
     return passwordError.value.isEmpty && confirmPasswordError.value.isEmpty;

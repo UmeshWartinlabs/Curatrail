@@ -92,6 +92,7 @@ class CommonTextField extends StatelessWidget {
         SizedBox(height: 5),
 
         Container(
+          height: 48,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(borderRadius ?? 8),
             color: AppColors.colorF3F3F3,
@@ -109,7 +110,7 @@ class CommonTextField extends StatelessWidget {
             onChanged: onChanged,
             controller: controller,
             cursorColor: AppColors.themeColor,
-            cursorHeight: 25,
+            cursorHeight: 20,
             keyboardType: keyboardType ?? TextInputType.text,
             inputFormatters: inputFormatters ?? [],
             style: Get.textTheme.titleMedium?.copyWith(
@@ -118,10 +119,10 @@ class CommonTextField extends StatelessWidget {
             ),
             decoration: InputDecoration(
               hintText: hintText ?? "".tr,
-              contentPadding: contentPadding ?? const EdgeInsets.only(
+              contentPadding: contentPadding ?? EdgeInsets.only(
                 left: 15,
                 top: 12,
-                bottom: 12,
+                bottom: (obscureText ?? false) ? 12 : 0,
                 right: 12,
               ),
               hintMaxLines: hintMaxLines ?? 5,

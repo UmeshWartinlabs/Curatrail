@@ -13,6 +13,9 @@ class AppAssets {
   static const emailVerificationIcon = "${icons}email_verification_icon.svg";
   static const closeEyeIcon = "${icons}close_eye_icon.svg";
   static const openEyeIcon = "${icons}open_eye_icon.svg";
+  static const accountCreationIcon = "${icons}account_creation_icon.svg";
+  static const faceIdIcon = "${icons}face_id_icon.svg";
+  static const fingerprintIcon = "${icons}fingerprint_icon.svg";
 
   /// ------- images
   static const curatrailLogo = "${images}curatrail_logo.png";

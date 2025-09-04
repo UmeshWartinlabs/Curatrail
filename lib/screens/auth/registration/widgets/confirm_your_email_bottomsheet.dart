@@ -54,8 +54,8 @@ class _ConfirmYourEmailBottomSheetState extends State<ConfirmYourEmailBottomShee
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.only(
-            topRight: Radius.circular(30),
-            topLeft: Radius.circular(30),
+            topRight: Radius.circular(40),
+            topLeft: Radius.circular(40),
           ),
         ),
         child: Padding(

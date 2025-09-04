@@ -1,5 +1,7 @@
 import 'package:curatrail/screens/auth/create_password/controller/create_password_controller.dart';
 import 'package:curatrail/screens/auth/create_password/view/create_password_screen.dart';
+import 'package:curatrail/screens/auth/login/controller/login_screen_controller.dart';
+import 'package:curatrail/screens/auth/login/view/login_screen.dart';
 import 'package:curatrail/screens/auth/registration/controller/registration_controller.dart';
 import 'package:curatrail/screens/auth/registration/view/registration_screen.dart';
 import 'package:curatrail/screens/onboarding/controller/onboarding_screen_controller.dart';
@@ -16,6 +18,7 @@ class AppRoutes {
   /// --- auth
   static const registrationScreen = "/registrationScreen";
   static const createPasswordScreen = "/createPasswordScreen";
+  static const loginScreen = "/loginScreen";
 
   static List<GetPage<dynamic>> get getPages {
     return [
@@ -49,6 +52,14 @@ class AppRoutes {
         name: AppRoutes.createPasswordScreen,
         page: () => CreatePasswordScreen(),
         binding: BindingsBuilder.put(() => CreatePasswordController()),
+        transition: Transition.cupertino,
+      ),
+
+      /// --- login screen
+      GetPage(
+        name: AppRoutes.loginScreen,
+        page: () => LoginScreen(),
+        binding: BindingsBuilder.put(() => LoginScreenController()),
         transition: Transition.cupertino,
       ),
     ];

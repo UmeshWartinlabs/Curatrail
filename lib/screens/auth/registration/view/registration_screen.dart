@@ -2,6 +2,7 @@ import 'dart:io';
 import 'package:curatrail/screens/auth/registration/controller/registration_controller.dart';
 import 'package:curatrail/screens/auth/registration/widgets/confirm_your_email_bottomsheet.dart';
 import 'package:curatrail/utils/app_colors.dart';
+import 'package:curatrail/utils/app_routes.dart';
 import 'package:curatrail/utils/app_strings.dart';
 import 'package:curatrail/widgets/common_appbar.dart';
 import 'package:curatrail/widgets/common_button.dart';
@@ -17,11 +18,9 @@ class RegistrationScreen extends GetView<RegistrationController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CommonAppBar(
-        isHideBackButton: true,
-      ),
+      appBar: CommonAppBar(isHideBackButton: true),
       body: Obx(
-        ()=> SafeArea(
+        () => SafeArea(
           child: GestureDetector(
             onTap: () {
               controller.isShowToolTip.value = false;
@@ -31,12 +30,11 @@ class RegistrationScreen extends GetView<RegistrationController> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-
                   Expanded(
                     child: SingleChildScrollView(
                       child: Column(
                         children: [
-                          SizedBox(height: Get.height * .1),
+                          SizedBox(height: Get.height * .07),
 
                           Center(
                             child: Text(
@@ -62,7 +60,8 @@ class RegistrationScreen extends GetView<RegistrationController> {
                           CommonTextField(
                             fieldTitle: AppStrings.phoneNO.tr,
                             controller: controller.phoneNumberController,
-                            onChanged: (value) => controller.phoneNumberValidation(),
+                            onChanged: (value) =>
+                                controller.phoneNumberValidation(),
                             errorText: controller.phoneNumberError.value,
                             keyboardType: TextInputType.phone,
                           ),
@@ -76,33 +75,48 @@ class RegistrationScreen extends GetView<RegistrationController> {
                                   CommonTextField(
                                     readOnly: true,
                                     onTap: () async {
-                                      DateTime? pickedDate = await commonDatePicker(context: context);
+                                      DateTime? pickedDate =
+                                          await commonDatePicker(
+                                            context: context,
+                                          );
 
                                       if (pickedDate != null) {
-                                        controller.dateOfBirthController.text = formatDate(date: pickedDate, pattern: "dd/MM/yyyy");
-                                        debugPrint("Selected Date: $pickedDate");
+                                        controller.dateOfBirthController.text =
+                                            formatDate(
+                                              date: pickedDate,
+                                              pattern: "dd/MM/yyyy",
+                                            );
+                                        debugPrint(
+                                          "Selected Date: $pickedDate",
+                                        );
                                       }
                                       await controller.dateOfBirthValidation();
                                     },
                                     fieldTitle: AppStrings.dob.tr,
-                                    controller: controller.dateOfBirthController,
-                                    onChanged: (value) => controller.dateOfBirthValidation(),
-                                    errorText: controller.dateOfBirthError.value,
+                                    controller:
+                                        controller.dateOfBirthController,
+                                    onChanged: (value) =>
+                                        controller.dateOfBirthValidation(),
+                                    errorText:
+                                        controller.dateOfBirthError.value,
                                     keyboardType: TextInputType.number,
                                   ),
-
 
                                   SizedBox(height: 15),
 
                                   CommonTextField(
                                     showInfoIcon: true,
                                     onTapInfo: () async {
-                                      controller.isShowToolTip.value = !controller.isShowToolTip.value;
+                                      controller.isShowToolTip.value =
+                                          !controller.isShowToolTip.value;
                                     },
                                     fieldTitle: AppStrings.patientAuthCode.tr,
-                                    controller: controller.patientAuthCodeController,
-                                    onChanged: (value) => controller.patientAuthCodeValidation(),
-                                    errorText: controller.patientAuthCodeError.value,
+                                    controller:
+                                        controller.patientAuthCodeController,
+                                    onChanged: (value) =>
+                                        controller.patientAuthCodeValidation(),
+                                    errorText:
+                                        controller.patientAuthCodeError.value,
                                     keyboardType: TextInputType.text,
                                   ),
 
@@ -110,8 +124,7 @@ class RegistrationScreen extends GetView<RegistrationController> {
                                 ],
                               ),
 
-
-                              if(controller.isShowToolTip.value)
+                              if (controller.isShowToolTip.value)
                                 Positioned(
                                   right: 25,
                                   top: 82,
@@ -122,7 +135,6 @@ class RegistrationScreen extends GetView<RegistrationController> {
                                 ),
                             ],
                           ),
-
                         ],
                       ),
                     ),
@@ -145,6 +157,7 @@ class RegistrationScreen extends GetView<RegistrationController> {
                           recognizer: TapGestureRecognizer()
                             ..onTap = () {
                               print("Tap login");
+                              Get.toNamed(AppRoutes.loginScreen);
                             },
                         ),
                       ],
@@ -156,14 +169,16 @@ class RegistrationScreen extends GetView<RegistrationController> {
                   CommonButton(
                     title: AppStrings.register.tr,
                     onTapButton: () async {
-                      if(await controller.validator()) {
-                        await ConfirmYourEmailBottomSheet.show(context, email: controller.emailController.text);
+                      if (await controller.validator()) {
+                        await ConfirmYourEmailBottomSheet.show(
+                          context,
+                          email: controller.emailController.text,
+                        );
                       }
                     },
                   ),
 
                   SizedBox(height: Platform.isAndroid ? 10 : 0),
-
                 ],
               ),
             ),
@@ -261,4 +276,3 @@ class ArrowPainter extends CustomPainter {
   @override
   bool shouldRepaint(covariant CustomPainter oldDelegate) => false;
 }
-
