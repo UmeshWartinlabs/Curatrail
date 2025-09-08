@@ -46,7 +46,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		KVmo63dIW3aQIUUH7hiXFUqOtZs=
+		6zM0tShGPj7wmPPuEilSK7MUnHs=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -54,15 +54,15 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		XRxIFqDvIHZRJayuPt0umSEYloM=
+		Z2fiOp8WG+srJQWF4o/lAfLbSO4=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
 		<data>
-		dqyW5AnJI3yupKv+r9As4MHIPUc=
+		/qYCMlz7GkYUJ2c+Xx5xpupGq5M=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<data>
-		GkvK/t7K795+LoODr4XooWBjF8g=
+		3R2y5mRQmGlZQaKUeOlFid+f2aY=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/NOTICES.Z</key>
 		<data>
-		/ZGiQIE0yHuhT2kkHzWGE+YD8Go=
+		HXNMQ+Hpr4NbIIF/Ewno/FkrW0Q=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/NativeAssetsManifest.json</key>
 		<data>
@@ -128,6 +128,14 @@
 		<data>
 		lGpiBOY433aMmt3EAsVxBYL9vPU=
 		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/icons/curatrail_title_withlogo.png</key>
+		<data>
+		FNOnnHdy155tI6OS/mH+crPf2TQ=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/icons/curatrail_title_withlogo.svg</key>
+		<data>
+		+PPsjxFmG2gZxTZ2Vfiro8HGyaQ=
+		</data>
 		<key>Frameworks/App.framework/flutter_assets/assets/icons/email_verification_icon.svg</key>
 		<data>
 		abycwijQGs7ezwOaxXaag6kMtTs=
@@ -147,6 +155,10 @@
 		<key>Frameworks/App.framework/flutter_assets/assets/icons/open_eye_icon.svg</key>
 		<data>
 		zIswsRDB5E/QkwuFEKUNzrJRnLo=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/icons/otp_verification_icon.svg</key>
+		<data>
+		9aih5b1ropg/ObjToMfNCZ01Y7k=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/assets/icons/personal_dashboard_icon.png</key>
 		<data>
@@ -174,7 +186,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/kernel_blob.bin</key>
 		<data>
-		X92bfFOX8Y2NBp766VNF7xGa4Yc=
+		p75KeyCjJd1JXIWVOhOL1RnvA4Q=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -425,7 +437,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6e7yiAZymhL6+0LqbOgBG+RVaejfWAwpoGxOKPIMwK0=
+			jq0jcMhoYHX1tKo6GqNwwDMcu7c0sFNdMOt6aScK3QQ=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -439,21 +451,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			k6G1waVtN65o5yRezp8Sd+2eAyhi6YHhh3ruN3OhsLA=
+			ZNvkfeZoI5CvCavxINTUisyGV1jQBaNFPGYs+54s0gs=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2eb9Zuf8L87skjtRQTVIzgSWzxuEFmU+ZkFRHTWfm0o=
+			X2WAroswyQgxDCzlTY503S+0oqLvLobcBlXhVoLnExc=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Z/B1fqXO1ieSQy26JzksFLYYCzgQECJNGyjDCnXPiac=
+			7Q/rq+XjZiZhVHz/479PaE6Kui4kGE3WlEfmfurv3X4=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
@@ -467,7 +479,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			unct29B9SBh+UMe2uUaNXhgPUVSx4oqKW/r2uH8wqs0=
+			jXjAQDTLMfYSHYqIRe8259eXpFLJDgP1Bfv9yGkZ5Wc=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/NativeAssetsManifest.json</key>
@@ -568,6 +580,20 @@
 			NntCUG+uCk2XjJf8/XmDc3vnBzcpi035rIK6fsoWCQE=
 			</data>
 		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/icons/curatrail_title_withlogo.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			a+476iM9Wn1HsZBEhvOWVUNkWPuBh8cYjq8Qaa6GobA=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/icons/curatrail_title_withlogo.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			fdz6nOSX4Dw26asvFakh7u17K9K9NEHxJNl3TC4jNRU=
+			</data>
+		</dict>
 		<key>Frameworks/App.framework/flutter_assets/assets/icons/email_verification_icon.svg</key>
 		<dict>
 			<key>hash2</key>
@@ -601,6 +627,13 @@
 			<key>hash2</key>
 			<data>
 			9Sc4WicRHrUI/YjXNCOG2aJlKS+RtAPnff/1S9bhrxg=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/icons/otp_verification_icon.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			4bL5Ot4qfzbXVtzUnls9aRQHXLXYdGDc+WvLE8Qhffc=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/assets/icons/personal_dashboard_icon.png</key>
@@ -649,7 +682,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MfVjSCmClhU7KHQWWFAa+vsEzdRVhajwJQ7xIEu3Fbs=
+			25cFhstwhSmh+HvmoXaJtob82nSxRjioehtkuF7F+Jo=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>

@@ -11,11 +11,13 @@ class AppAssets {
   static const onboardIcon4 = "${icons}star_badge_icon.png";
   static const infoIcon = "${icons}info_icon.svg";
   static const emailVerificationIcon = "${icons}email_verification_icon.svg";
+  static const otpVerificationIcon = "${icons}otp_verification_icon.svg";
   static const closeEyeIcon = "${icons}close_eye_icon.svg";
   static const openEyeIcon = "${icons}open_eye_icon.svg";
   static const accountCreationIcon = "${icons}account_creation_icon.svg";
   static const faceIdIcon = "${icons}face_id_icon.svg";
   static const fingerprintIcon = "${icons}fingerprint_icon.svg";
+  static const curatrailTitleWithLogo = "${icons}curatrail_title_withlogo.png";
 
   /// ------- images
   static const curatrailLogo = "${images}curatrail_logo.png";

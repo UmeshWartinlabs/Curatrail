@@ -64,4 +64,28 @@ class AppStrings {
   /// ----- login
   static const forgetPassword = "Forgot Password?";
 
+  /// ----- forgot password
+  static const forgotPassword = "Forgot Password";
+  static const enterYourRegisteredEmail = "Enter your registered Email. We’ll send a 6 digit code to your email";
+  static const sendCode = "Send Code";
+  static const digitCodeSentToYourEmail = "A 6 digit code has been sent to your email";
+  static const pleaseEnterThatCodeToResetPassword = "Please enter that code to reset your password";
+  static const verify = "Verify";
+  static const enter6DigitCode = "Enter 6 digit code sent to your email";
+
+  /// ----- otp
+  static const otpCanNotBeEmpty = "Otp ca not be empty";
+  static const otp6CharError = "Otp must be 6 characters";
+  static const didTReceiveCode = "Didn’t receive code? ";
+  static const resendCode = "Resend code";
+  static const otpVerifiedSuccessfully = "OTP verified Successfully";
+
+  /// ----- reset password
+  static const resetPassword = "Reset password";
+  static const enterNewPassword = "Enter new password";
+  static const newPassword = "New Password";
+  static const confirmNewPassword = "Confirm New Password";
+  static const change = "Change";
+  static const passwordChangeSuccessfully = "Password changes successfully";
+
 }

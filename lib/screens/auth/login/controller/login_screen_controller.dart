@@ -40,4 +40,15 @@ class LoginScreenController extends GetxController {
       emailError.value = "";
     }
   }
+
+  validator () async {
+    await passwordValidation();
+    await emailValidation();
+
+    if(passwordError.value.isEmpty && emailError.value.isEmpty) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 }

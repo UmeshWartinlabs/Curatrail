@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
          );
        },
       debugShowCheckedModeBanner: false,
-      initialRoute: AppRoutes.splashScreen,
+      initialRoute: AppRoutes.preSplashScreen,
       getPages: AppRoutes.getPages,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),

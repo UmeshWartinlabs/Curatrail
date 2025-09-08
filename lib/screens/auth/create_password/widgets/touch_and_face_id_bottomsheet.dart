@@ -37,7 +37,7 @@ class _TouchAndFaceIdBottomSheetState extends State<TouchAndFaceIdBottomSheet> {
   @override
   Widget build(BuildContext context) {
     return BackdropFilter(
-      filter: ImageFilter.blur(sigmaX: 3, sigmaY: 3),
+      filter: ImageFilter.blur(sigmaX: 0, sigmaY: 0),
       child: PopScope(
         canPop: false,
         child: Container(

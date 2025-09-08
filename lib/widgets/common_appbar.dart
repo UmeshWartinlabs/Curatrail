@@ -6,7 +6,7 @@ import 'package:get/get.dart';
 
 class CommonAppBar extends StatelessWidget implements PreferredSizeWidget {
   final String? title;
-  final bool? isHideBackButton, isCuratrailTitle;
+  final bool? isHideBackButton, isCuratrailTitle, isTitleWithLogo;
   final Widget? leadingIcon, actionWidget;
   final void Function()? onTapLeading;
   final TextStyle? titleTextStyle;
@@ -18,7 +18,7 @@ class CommonAppBar extends StatelessWidget implements PreferredSizeWidget {
     this.isCuratrailTitle,
     this.leadingIcon,
     this.onTapLeading,
-    this.titleTextStyle, this.actionWidget,
+    this.titleTextStyle, this.actionWidget, this.isTitleWithLogo,
   });
 
   @override
@@ -27,7 +27,7 @@ class CommonAppBar extends StatelessWidget implements PreferredSizeWidget {
       padding: const EdgeInsets.symmetric(horizontal: 20),
       child: AppBar(
         title: (title ?? "").isEmpty
-            ? SvgPicture.asset(AppAssets.curatrailText)
+            ? (isTitleWithLogo ?? false) ? Image.asset(AppAssets.curatrailTitleWithLogo, scale: 2.1) : SvgPicture.asset(AppAssets.curatrailText)
             : Text(
                 title ?? "",
                 style: titleTextStyle ?? Get.textTheme.titleLarge!.copyWith(fontSize: 18),

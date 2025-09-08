@@ -48,7 +48,7 @@ class _ConfirmYourEmailBottomSheetState extends State<ConfirmYourEmailBottomShee
   @override
   Widget build(BuildContext context) {
     return BackdropFilter(
-      filter: ImageFilter.blur(sigmaX: 3, sigmaY: 3),
+      filter: ImageFilter.blur(sigmaX: 0, sigmaY: 0),
       child: Container(
         width: Get.width,
         decoration: BoxDecoration(

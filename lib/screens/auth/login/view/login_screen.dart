@@ -2,6 +2,7 @@ import 'dart:io';
 import 'package:curatrail/screens/auth/login/controller/login_screen_controller.dart';
 import 'package:curatrail/utils/app_assets.dart';
 import 'package:curatrail/utils/app_colors.dart';
+import 'package:curatrail/utils/app_routes.dart';
 import 'package:curatrail/utils/app_strings.dart';
 import 'package:curatrail/widgets/common_appbar.dart';
 import 'package:curatrail/widgets/common_button.dart';
@@ -83,7 +84,7 @@ class LoginScreen extends GetView<LoginScreenController> {
                           alignment: Alignment.centerRight,
                           child: GestureDetector(
                             onTap: () {
-                              debugPrint("Forget password");
+                              Get.toNamed(AppRoutes.forgotPasswordScreen);
                             },
                             child: Container(
                               height: 35,
@@ -134,7 +135,9 @@ class LoginScreen extends GetView<LoginScreenController> {
 
                 CommonButton(
                   title: AppStrings.login.tr,
-                  onTapButton: () async {},
+                  onTapButton: () async {
+                    if(await controller.validator()) {}
+                  },
                 ),
 
                 SizedBox(height: Platform.isAndroid ? 10 : 0),
