@@ -46,7 +46,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		6zM0tShGPj7wmPPuEilSK7MUnHs=
+		sCAn4ZTE17zgJtUkydX4MyDIdIU=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -54,15 +54,15 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		Z2fiOp8WG+srJQWF4o/lAfLbSO4=
+		aHgjyE5trAbrFOpWQSFmp2vdlKY=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
 		<data>
-		/qYCMlz7GkYUJ2c+Xx5xpupGq5M=
+		3QkaEw0L1cMmx7l0EsOFE6u4vyc=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<data>
-		3R2y5mRQmGlZQaKUeOlFid+f2aY=
+		TPhUx5km79H042ewZ2vIOUFzuuI=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
 		<data>
@@ -168,6 +168,10 @@
 		<data>
 		VZLC5ZboTaEchHJlTVs7wOPFe68=
 		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/icons/waving_hand_icon.svg</key>
+		<data>
+		6ei+UYB8LtLpAyAFkhJITK0fNtg=
+		</data>
 		<key>Frameworks/App.framework/flutter_assets/assets/images/curatrail_logo.png</key>
 		<data>
 		JY6d7bqwKfRx56Xpq8a5ZNh50Ew=
@@ -186,7 +190,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/kernel_blob.bin</key>
 		<data>
-		p75KeyCjJd1JXIWVOhOL1RnvA4Q=
+		LWB/mTT8fRjN+ccVJvTAZ5ppI4E=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -437,7 +441,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jq0jcMhoYHX1tKo6GqNwwDMcu7c0sFNdMOt6aScK3QQ=
+			YT46/GyTwGQvJOofda/B4ybkE3oqjnsUdhWqDR6S/1M=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -451,21 +455,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZNvkfeZoI5CvCavxINTUisyGV1jQBaNFPGYs+54s0gs=
+			ybc6+tZ0qRTbcEaZMOnb32GeFE6+WUOtcceds+jNUjQ=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			X2WAroswyQgxDCzlTY503S+0oqLvLobcBlXhVoLnExc=
+			GKqHzM6mWgHfdlZt6e4IJlWRvmbcBtZ61XAFeYQeC34=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7Q/rq+XjZiZhVHz/479PaE6Kui4kGE3WlEfmfurv3X4=
+			n1utX3ns2O44GvQ0DkVGlcyaEH9YuW1nB19GCMF8bD0=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
@@ -650,6 +654,13 @@
 			HfgKpKUYUZS9SUXrY4ZM/Z/IuflnMME8jdWw+noJpx8=
 			</data>
 		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/icons/waving_hand_icon.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			OR0scyqDWDuniWhrGUfHgPvHK4i1EivVL88YcckhSm4=
+			</data>
+		</dict>
 		<key>Frameworks/App.framework/flutter_assets/assets/images/curatrail_logo.png</key>
 		<dict>
 			<key>hash2</key>
@@ -682,7 +693,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			25cFhstwhSmh+HvmoXaJtob82nSxRjioehtkuF7F+Jo=
+			vlQYny7Saxa13RWuON3XvMvsSwz3QAJoHDfZutOJVok=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>

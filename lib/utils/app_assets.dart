@@ -18,6 +18,7 @@ class AppAssets {
   static const faceIdIcon = "${icons}face_id_icon.svg";
   static const fingerprintIcon = "${icons}fingerprint_icon.svg";
   static const curatrailTitleWithLogo = "${icons}curatrail_title_withlogo.png";
+  static const wavingHandIcon = "${icons}waving_hand_icon.svg";
 
   /// ------- images
   static const curatrailLogo = "${images}curatrail_logo.png";

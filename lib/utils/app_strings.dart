@@ -88,4 +88,70 @@ class AppStrings {
   static const change = "Change";
   static const passwordChangeSuccessfully = "Password changes successfully";
 
+  /// ----- add personal info
+  static const heyWelcome = "Hey Welcome";
+  static const completeYourProfileForBetterService = "Please complete your user profile to receive better service.";
+  static const gender = "Gender";
+  static const selectGender = "Select Gender";
+  static const race = "Race";
+  static const selectRace = "Select Race";
+  static const educationLevel = "Education Level";
+  static const selectEducationLevel = "Select Education Level";
+  static const maritalStatus = "Marital status";
+  static const selectMaritalStatus = "Select Marital status";
+  static const occupation = "Occupation";
+  static const selectOccupation = "Select Occupation";
+  static const socialEconomicStatus = "Social Economic Status";
+  static const selectEconomicStatus = "Select Economic Status";
+  static const location = "Location";
+  static const enterYourLocation = "Enter your location";
+
+  static const male = "Male";
+  static const female = "Female";
+  static const nonBinary = "Non-Binary";
+  static const preferNotToSay = "Prefer not to say";
+  static const selfDescribe = "Self-describe";
+
+  static const other = "Others";
+  static const asian = "Asian";
+  static const blackAfricanDescent = "Black / African descent";
+  static const hispanicLatino = "Hispanic / Latino";
+  static const middleEasternNorthAfrican = "Middle Eastern / North African";
+  static const nativeAmericanIndigenous = "Native American / Indigenous";
+  static const pacificIslander = "Pacific Islander";
+  static const whiteCaucasian = "White / Caucasian";
+  static const mixedMultiracial = "Mixed / Multiracial";
+
+  static const noFormalEducation = "No formal education";
+  static const primarySchool = "Primary school";
+  static const secondarySchoolHighSchoolDiploma = "Secondary school / High school diploma";
+  static const someCollegeNoDegree = "Some college, no degree";
+  static const associateDegree = "Associate degree";
+  static const bachelorsDegree = "Bachelor’s degree";
+  static const mastersDegree = "Master’s degree";
+  static const doctorateProfessionalDegree = "Doctorate / Professional degree (MD, PhD, JD, etc.)";
+
+  static const single = "Single";
+  static const married = "Married";
+  static const livingWithPartner = "Living with partner";
+  static const divorced = "Divorced";
+  static const widowed = "Widowed";
+  static const separated = "Separated";
+
+  static const student = "Student";
+  static const employedFullTime = "Employed full-time";
+  static const employedPartTime = "Employed part-time";
+  static const selfEmployed = "Self-employed";
+  static const unemployed = "Unemployed (looking for work)";
+  static const homemaker = "Homemaker";
+  static const retired = "Retired";
+  static const unableToWork = "Unable to work (disability, health reasons)";
+
+  static const facingFinancialDifficulties = "Facing financial difficulties";
+  static const ableToMeetBasic = "Able to meet basic needs, but limited extras";
+  static const comfortableNoMajorFinancialStress = "Comfortable, no major financial stress";
+  static const wellOffAbleToAffordMostThing = "Well-off, able to afford most things comfortably";
+  static const wealthNoFinancialConstraints = "Wealthy / No financial constraints";
+
+  static const submit = "Submit";
 }

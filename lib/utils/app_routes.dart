@@ -1,3 +1,5 @@
+import 'package:curatrail/screens/auth/add_personal_info/controller/add_personal_info_screen_controller.dart';
+import 'package:curatrail/screens/auth/add_personal_info/view/add_personal_info_screen.dart';
 import 'package:curatrail/screens/auth/create_password/controller/create_password_controller.dart';
 import 'package:curatrail/screens/auth/create_password/view/create_password_screen.dart';
 import 'package:curatrail/screens/auth/forgot_password/controller/forgot_password_controller.dart';
@@ -30,6 +32,7 @@ class AppRoutes {
   static const forgotPasswordScreen = "/forgotPasswordScreen";
   static const forgotPasswordOtpScreen = "/forgotPasswordOtpScreen";
   static const resetPasswordScreen = "/resetPasswordScreen";
+  static const addPersonalInfoScreen = "/addPersonalInfoScreen";
 
   static List<GetPage<dynamic>> get getPages {
     return [
@@ -102,6 +105,14 @@ class AppRoutes {
         name: AppRoutes.resetPasswordScreen,
         page: () => ResetPasswordScreen(),
         binding: BindingsBuilder.put(() => ResetPasswordScreenController()),
+        transition: Transition.cupertino,
+      ),
+
+      /// --- add personal info screen
+      GetPage(
+        name: AppRoutes.addPersonalInfoScreen,
+        page: () => AddPersonalInfoScreen(),
+        binding: BindingsBuilder.put(() => AddPersonalInfoScreenController()),
         transition: Transition.cupertino,
       ),
     ];

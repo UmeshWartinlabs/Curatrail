@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:curatrail/screens/auth/create_password/widgets/touch_and_face_id_bottomsheet.dart';
 import 'package:curatrail/utils/app_assets.dart';
 import 'package:curatrail/utils/app_colors.dart';
+import 'package:curatrail/utils/app_routes.dart';
 import 'package:curatrail/utils/app_strings.dart';
 import 'package:curatrail/widgets/common_button.dart';
 import 'package:flutter/material.dart';
@@ -92,7 +93,17 @@ class _AccountCreationBottomSheetState extends State<AccountCreationBottomSheet>
                     title: AppStrings.next.tr,
                     onTapButton: () async {
                       Get.back();
-                      await TouchAndFaceIdBottomSheet.show(context);
+                      await TouchAndFaceIdBottomSheet.show(
+                        context,
+                        onTapEnable: () {
+                          Get.back();
+                          Get.offAllNamed(AppRoutes.addPersonalInfoScreen);
+                        },
+                        onTapNotNow: () {
+                          Get.back();
+                          Get.offAllNamed(AppRoutes.addPersonalInfoScreen);
+                        },
+                      );
                     },
                   ),
 

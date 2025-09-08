@@ -10,20 +10,21 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 
 class TouchAndFaceIdBottomSheet extends StatefulWidget {
-
-  const TouchAndFaceIdBottomSheet({super.key});
+  final void Function()? onTapNotNow;
+  final void Function()? onTapEnable;
+  const TouchAndFaceIdBottomSheet({super.key, this.onTapNotNow, this.onTapEnable});
 
   @override
   State<TouchAndFaceIdBottomSheet> createState() => _TouchAndFaceIdBottomSheetState();
 
-  static Future show(BuildContext context) {
+  static Future show(BuildContext context, {void Function()? onTapNotNow, void Function()? onTapEnable}) {
     return showModalBottomSheet(
       useRootNavigator: true,
       context: context,
       isScrollControlled: true,
       barrierColor: AppColors.black.withOpacity(0.6),
       backgroundColor: AppColors.transparent,
-      builder: (context) => TouchAndFaceIdBottomSheet(),
+      builder: (context) => TouchAndFaceIdBottomSheet(onTapEnable: onTapEnable, onTapNotNow: onTapNotNow),
     );
   }
 }
@@ -198,9 +199,7 @@ class _TouchAndFaceIdBottomSheetState extends State<TouchAndFaceIdBottomSheet> {
 
                   CommonButton(
                     title: AppStrings.enable.tr,
-                    onTapButton: () {
-                      Get.back();
-                    },
+                    onTapButton: widget.onTapEnable,
                   ),
 
                   SizedBox(height: 10),
@@ -208,9 +207,7 @@ class _TouchAndFaceIdBottomSheetState extends State<TouchAndFaceIdBottomSheet> {
                   CommonButton(
                     title: AppStrings.notNow.tr,
                     buttonColor: AppColors.colorDADADA,
-                    onTapButton: () {
-                      Get.back();
-                    },
+                    onTapButton: widget.onTapNotNow,
                   ),
 
                   SizedBox(height: 10),
