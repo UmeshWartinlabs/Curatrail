@@ -1,6 +1,7 @@
 import 'dart:io';
 import 'package:curatrail/screens/auth/registration/controller/registration_controller.dart';
 import 'package:curatrail/screens/auth/registration/widgets/confirm_your_email_bottomsheet.dart';
+import 'package:curatrail/screens/auth/registration/widgets/dob_calendar_bottom_sheet.dart';
 import 'package:curatrail/utils/app_colors.dart';
 import 'package:curatrail/utils/app_routes.dart';
 import 'package:curatrail/utils/app_strings.dart';
@@ -60,8 +61,7 @@ class RegistrationScreen extends GetView<RegistrationController> {
                           CommonTextField(
                             fieldTitle: AppStrings.phoneNO.tr,
                             controller: controller.phoneNumberController,
-                            onChanged: (value) =>
-                                controller.phoneNumberValidation(),
+                            onChanged: (value) => controller.phoneNumberValidation(),
                             errorText: controller.phoneNumberError.value,
                             keyboardType: TextInputType.phone,
                           ),
@@ -75,17 +75,21 @@ class RegistrationScreen extends GetView<RegistrationController> {
                                   CommonTextField(
                                     readOnly: true,
                                     onTap: () async {
-                                      DateTime? pickedDate =
-                                          await commonDatePicker(
-                                            context: context,
-                                          );
+
+                                      final pickedDate = await showModalBottomSheet<DateTime?>(
+                                        context: context,
+                                        isScrollControlled: true,
+                                        backgroundColor: Colors.transparent,
+                                        barrierColor: Colors.black54,
+                                        builder: (_) => DraggableScrollableSheet(
+                                          initialChildSize: 0.58,
+                                          maxChildSize: 0.95,
+                                          builder: (context, scroll) => DobCalendarBottomSheet(),
+                                        ),
+                                      );
 
                                       if (pickedDate != null) {
-                                        controller.dateOfBirthController.text =
-                                            formatDate(
-                                              date: pickedDate,
-                                              pattern: "dd/MM/yyyy",
-                                            );
+                                        controller.dateOfBirthController.text = formatDate(date: pickedDate, pattern: "dd/MM/yyyy",);
                                         debugPrint(
                                           "Selected Date: $pickedDate",
                                         );
@@ -93,12 +97,9 @@ class RegistrationScreen extends GetView<RegistrationController> {
                                       await controller.dateOfBirthValidation();
                                     },
                                     fieldTitle: AppStrings.dob.tr,
-                                    controller:
-                                        controller.dateOfBirthController,
-                                    onChanged: (value) =>
-                                        controller.dateOfBirthValidation(),
-                                    errorText:
-                                        controller.dateOfBirthError.value,
+                                    controller: controller.dateOfBirthController,
+                                    onChanged: (value) => controller.dateOfBirthValidation(),
+                                    errorText: controller.dateOfBirthError.value,
                                     keyboardType: TextInputType.number,
                                   ),
 
@@ -107,16 +108,12 @@ class RegistrationScreen extends GetView<RegistrationController> {
                                   CommonTextField(
                                     showInfoIcon: true,
                                     onTapInfo: () async {
-                                      controller.isShowToolTip.value =
-                                          !controller.isShowToolTip.value;
+                                      controller.isShowToolTip.value = !controller.isShowToolTip.value;
                                     },
                                     fieldTitle: AppStrings.patientAuthCode.tr,
-                                    controller:
-                                        controller.patientAuthCodeController,
-                                    onChanged: (value) =>
-                                        controller.patientAuthCodeValidation(),
-                                    errorText:
-                                        controller.patientAuthCodeError.value,
+                                    controller: controller.patientAuthCodeController,
+                                    onChanged: (value) => controller.patientAuthCodeValidation(),
+                                    errorText: controller.patientAuthCodeError.value,
                                     keyboardType: TextInputType.text,
                                   ),
 

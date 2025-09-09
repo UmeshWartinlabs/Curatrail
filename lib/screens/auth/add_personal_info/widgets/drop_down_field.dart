@@ -2,7 +2,7 @@ import 'package:curatrail/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class DropDownField extends StatelessWidget {
+class DropDownField extends StatefulWidget {
   final String? fieldTitle;
   final String? fieldHint;
   final bool? isDropDownOpen;
@@ -29,12 +29,51 @@ class DropDownField extends StatelessWidget {
   });
 
   @override
+  State<DropDownField> createState() => _DropDownFieldState();
+}
+
+class _DropDownFieldState extends State<DropDownField> with SingleTickerProviderStateMixin {
+  late AnimationController _controller;
+  late Animation<double> _animation;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = AnimationController(
+      vsync: this,
+      duration: Duration(milliseconds: 300),
+    );
+    _animation = CurvedAnimation(parent: _controller, curve: Curves.easeInOut);
+
+    if (widget.isDropDownOpen == true) {
+      _controller.forward();
+    }
+  }
+
+  @override
+  void didUpdateWidget(covariant DropDownField oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (widget.isDropDownOpen == true) {
+      _controller.forward();
+    } else {
+      _controller.reverse();
+    }
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
+        /// Field Title
         Text(
-          fieldTitle ?? "",
+          widget.fieldTitle ?? "",
           style: Get.textTheme.titleMedium?.copyWith(
             fontSize: 16,
             color: AppColors.textColor,
@@ -43,8 +82,9 @@ class DropDownField extends StatelessWidget {
 
         SizedBox(height: 6),
 
+        /// Dropdown Field / TextField
         GestureDetector(
-          onTap: onTapDropDown,
+          onTap: widget.onTapDropDown,
           child: Container(
             width: Get.width,
             decoration: BoxDecoration(
@@ -52,20 +92,20 @@ class DropDownField extends StatelessWidget {
               color: AppColors.colorF3F3F3,
             ),
             padding: EdgeInsets.symmetric(
-              horizontal: (type ?? "") == "dropdown" ? 20 : 5,
-              vertical: (type ?? "") == "dropdown" ? 14 : 0,
+              horizontal: (widget.type ?? "") == "dropdown" ? 20 : 5,
+              vertical: (widget.type ?? "") == "dropdown" ? 14 : 0,
             ),
-            child: (type ?? "") == "dropdown"
+            child: (widget.type ?? "") == "dropdown"
                 ? Row(
                     children: [
                       Text(
-                        (selectedValue ?? "").isEmpty
-                            ? (fieldHint ?? "")
-                            : (selectedValue ?? ""),
+                        (widget.selectedValue ?? "").isEmpty
+                            ? (widget.fieldHint ?? "")
+                            : (widget.selectedValue ?? ""),
                         style: Get.textTheme.titleMedium?.copyWith(
                           fontSize: 16,
-                          color: (selectedValue ?? "").isEmpty
-                              ? AppColors.textColor
+                          color: (widget.selectedValue ?? "").isEmpty
+                              ? AppColors.textLightColor
                               : AppColors.black,
                         ),
                       ),
@@ -87,8 +127,8 @@ class DropDownField extends StatelessWidget {
                     ],
                   )
                 : TextFormField(
-                    maxLines: maxLine,
-                    controller: controller,
+                    maxLines: widget.maxLine,
+                    controller: widget.controller,
                     onTapOutside: (event) {
                       FocusManager.instance.primaryFocus?.unfocus();
                     },
@@ -97,10 +137,10 @@ class DropDownField extends StatelessWidget {
                       color: AppColors.black,
                     ),
                     decoration: InputDecoration(
-                      hintText: fieldHint,
+                      hintText: widget.fieldHint,
                       hintStyle: Get.textTheme.titleMedium?.copyWith(
                         fontSize: 16,
-                        color: AppColors.textColor,
+                        color: AppColors.textLightColor,
                       ),
                       border: OutlineInputBorder(borderSide: BorderSide.none),
                     ),
@@ -108,21 +148,21 @@ class DropDownField extends StatelessWidget {
           ),
         ),
 
-        if (isDropDownOpen == true) ...[
-          Column(
-            children: dropDownValue.asMap().entries.map((entry) {
+        /// Animated Dropdown List
+        SizeTransition(
+          sizeFactor: _animation,
+          axisAlignment: 0.0,
+          child: Column(
+            children: widget.dropDownValue.asMap().entries.map((entry) {
               final index = entry.key;
               final value = entry.value;
-              final isLast = index == dropDownValue.length - 1;
+              final isLast = index == widget.dropDownValue.length - 1;
 
               return InkWell(
-                onTap: () => onSelect?.call(value),
+                onTap: () => widget.onSelect?.call(value),
                 child: Container(
                   width: Get.width,
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 20,
-                    vertical: 12,
-                  ),
+                  padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
                   decoration: BoxDecoration(
                     color: AppColors.colorF3F3F3,
                     border: isLast
@@ -145,7 +185,7 @@ class DropDownField extends StatelessWidget {
               );
             }).toList(),
           ),
-        ],
+        ),
       ],
     );
   }
