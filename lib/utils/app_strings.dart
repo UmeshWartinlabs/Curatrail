@@ -48,6 +48,7 @@ class AppStrings {
   static const createAccount = "Create Account";
   static const passwordCanNotBeEmpty = "Password cannot be empty";
   static const passwordMustBe8Char = "Password must be at least 8 characters";
+  static const passwordInvalidFormat = "Password must contain at least 1 uppercase, 1 number, and 1 special character";
   static const confirmPasswordCanNotBeEmpty = "Confirm Password cannot be empty";
   static const confirmPasswordMustBe8Char = "Confirm Password must be at least 8 characters";
   static const passwordsDoNotMatch = "Passwords do not match";
@@ -153,5 +154,23 @@ class AppStrings {
   static const wellOffAbleToAffordMostThing = "Well-off, able to afford most things comfortably";
   static const wealthNoFinancialConstraints = "Wealthy / No financial constraints";
 
+  /// ----- anxiety analytics
   static const submit = "Submit";
+  static const gad7 = "GAD-7";
+  static const bai = "BAI  ";
+  static const pleaseCompleteTheGad7 = "Please complete the GAD-7 questionnaire to assess your anxiety levels.";
+  static const questions = "Questions";
+
+  static const gadQue1 = "Feeling nervous, anxious, or on edge?";
+  static const gadQue2 = "Not being able to stop or control worrying?";
+  static const gadQue3 = "Worrying too much about different things?";
+  static const gadQue4 = "Trouble relaxing?";
+  static const gadQue5 = "Being so restless that it is hard to sit still?";
+  static const gadQue6 = "Becoming easily annoyed or irritable?";
+  static const gadQue7 = "Feeling afraid, as if something awful might happen?";
+
+  static const gadOption1 = "Not at all (0)";
+  static const gadOption2 = "Several days (1)";
+  static const gadOption3 = "More than half the days (2)";
+  static const gadOption4 = "Nearly every day (3)";
 }

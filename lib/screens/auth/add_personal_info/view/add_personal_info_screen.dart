@@ -2,6 +2,7 @@ import 'package:curatrail/screens/auth/add_personal_info/controller/add_personal
 import 'package:curatrail/screens/auth/add_personal_info/widgets/drop_down_field.dart';
 import 'package:curatrail/utils/app_assets.dart';
 import 'package:curatrail/utils/app_colors.dart';
+import 'package:curatrail/utils/app_routes.dart';
 import 'package:curatrail/utils/app_strings.dart';
 import 'package:curatrail/widgets/common_appbar.dart';
 import 'package:curatrail/widgets/common_button.dart';
@@ -95,6 +96,8 @@ class AddPersonalInfoScreen extends GetView<AddPersonalInfoScreenController> {
                     String selectedValue = controller.dropDownController[i].text;
 
                     debugPrint("Index $i → $fieldTitle : $selectedValue");
+
+                    Get.toNamed(AppRoutes.anxietyAnalyticsScreen);
                   }
                 },
               ),

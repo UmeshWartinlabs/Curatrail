@@ -22,10 +22,14 @@ class ResetPasswordScreenController extends GetxController {
     passwordError.value = "";
     confirmPasswordError.value = "";
 
+    final passwordRegex = RegExp(r'^(?=.*[A-Z])(?=.*\d)(?=.*[!@#\$&*~^%+=?<>_\-]).{8,}$');
+
     if (password.isEmpty) {
       passwordError.value = AppStrings.passwordCanNotBeEmpty.tr;
     } else if (password.length < 8) {
       passwordError.value = AppStrings.passwordMustBe8Char.tr;
+    } else if (!passwordRegex.hasMatch(password)) {
+      passwordError.value = AppStrings.passwordInvalidFormat.tr;
     }
 
     if (confirmPassword.isEmpty) {
