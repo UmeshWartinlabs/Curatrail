@@ -14,6 +14,8 @@ import 'package:curatrail/screens/auth/registration/controller/registration_cont
 import 'package:curatrail/screens/auth/registration/view/registration_screen.dart';
 import 'package:curatrail/screens/auth/reset_password/controller/reset_password_screen_controller.dart';
 import 'package:curatrail/screens/auth/reset_password/view/reset_password_screen.dart';
+import 'package:curatrail/screens/bottom_bar/controller/bottom_bar_controller.dart';
+import 'package:curatrail/screens/bottom_bar/view/bottom_bar_screen.dart';
 import 'package:curatrail/screens/onboarding/controller/onboarding_screen_controller.dart';
 import 'package:curatrail/screens/onboarding/view/onboarding_screen.dart';
 import 'package:curatrail/screens/splash/controller/splash_screen_controller.dart';
@@ -36,6 +38,9 @@ class AppRoutes {
   static const resetPasswordScreen = "/resetPasswordScreen";
   static const addPersonalInfoScreen = "/addPersonalInfoScreen";
   static const anxietyAnalyticsScreen = "/anxietyAnalyticsScreen";
+
+  /// --- bottom bar
+  static const bottomBarScreen = "/bottomBarScreen";
 
   static List<GetPage<dynamic>> get getPages {
     return [
@@ -124,6 +129,14 @@ class AppRoutes {
         name: AppRoutes.anxietyAnalyticsScreen,
         page: () => AnxietyAnalyticsScreen(),
         binding: BindingsBuilder.put(() => AnxietyAnalyticsScreenController()),
+        transition: Transition.cupertino,
+      ),
+
+      /// --- bottom bar screen
+      GetPage(
+        name: AppRoutes.bottomBarScreen,
+        page: () => BottomBarScreen(),
+        binding: BindingsBuilder.put(() => BottomBarController()),
         transition: Transition.cupertino,
       ),
     ];

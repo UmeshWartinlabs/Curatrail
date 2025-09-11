@@ -87,7 +87,7 @@ class AppStrings {
   static const newPassword = "New Password";
   static const confirmNewPassword = "Confirm New Password";
   static const change = "Change";
-  static const passwordChangeSuccessfully = "Password changes successfully";
+  static const passwordChangeSuccessfully = "Password changed";
 
   /// ----- add personal info
   static const heyWelcome = "Hey Welcome";
@@ -173,4 +173,40 @@ class AppStrings {
   static const gadOption2 = "Several days (1)";
   static const gadOption3 = "More than half the days (2)";
   static const gadOption4 = "Nearly every day (3)";
+
+  static const baiQue1 = "Numbness or tingling";
+  static const baiQue2 = "Feeling hot";
+  static const baiQue3 = "Wobbliness in legs";
+  static const baiQue4 = "Unable to relax";
+  static const baiQue5 = "Fear of worst happening";
+  static const baiQue6 = "Dizzy or lightheaded";
+  static const baiQue7 = "Heart pounding / racing";
+  static const baiQue8 = "Unsteady";
+  static const baiQue9 = "Terrified or afraid";
+  static const baiQue10 = "Nervous";
+  static const baiQue11 = "Feeling of choking";
+  static const baiQue12 = "Hands trembling";
+  static const baiQue13 = "Shaky / unsteady";
+  static const baiQue14 = "Fear of losing control";
+  static const baiQue15 = "Difficulty in breathing";
+  static const baiQue16 = "Fear of dying";
+  static const baiQue17 = "Scared";
+  static const baiQue18 = "Indigestion";
+  static const baiQue19 = "Faint / lightheaded";
+  static const baiQue20 = "Face flushed";
+  static const baiQue21 = "Hot / cold sweats";
+
+  static const baiOption2 = "Mildly (1)";
+  static const baiOption3 = "Moderately (2)";
+  static const baiOption4 = "Severely (3)";
+
+  static const previous = "Previous";
+  static const scoring = "Scoring:";
+  static const goToDashboard = "Go To Dashboard:";
+
+  /// ----- reset password
+  static const dashboard = "Dashboard";
+  static const cbt = "CBT";
+  static const aiCoaching = "Ai Coaching";
+  static const rewards = "Rewards";
 }

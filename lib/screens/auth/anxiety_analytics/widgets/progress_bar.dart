@@ -5,9 +5,9 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class AnxietyProgressBar extends GetView<AnxietyAnalyticsScreenController> {
-  final bool? isGadComplete;
-  final bool? isBaiComplete;
-  const AnxietyProgressBar({super.key, this.isGadComplete, this.isBaiComplete});
+  final bool? isGadQuestionComplete;
+  final bool? isBaiQuestionComplete;
+  const AnxietyProgressBar({super.key, this.isGadQuestionComplete, this.isBaiQuestionComplete});
 
   @override
   Widget build(BuildContext context) {
@@ -56,13 +56,13 @@ class AnxietyProgressBar extends GetView<AnxietyAnalyticsScreenController> {
                           Container(
                             height: 5,
                             width: (Get.width - 40) / 2,
-                            color: (isGadComplete ?? false) ? AppColors.color5FAC50 : AppColors.themeColor,
+                            color: (isGadQuestionComplete ?? false) ? AppColors.color5FAC50 : AppColors.themeColor,
                           ),
 
                           Container(
                             height: 5,
                             width: (Get.width - 40) / 2,
-                            color: (isGadComplete ?? false) ? (isBaiComplete ?? false) ? AppColors.color5FAC50 : AppColors.themeColor : AppColors.colorE1E1E1,
+                            color: (isGadQuestionComplete ?? false) ? (isBaiQuestionComplete ?? false) ? AppColors.color5FAC50 : AppColors.themeColor : AppColors.colorE1E1E1,
                           ),
                         ],
                       ),
@@ -76,8 +76,8 @@ class AnxietyProgressBar extends GetView<AnxietyAnalyticsScreenController> {
                     height: 20,
                     width: 20,
                     decoration: BoxDecoration(
-                      border: Border.all(color: (isGadComplete ?? false) ? AppColors.color5FAC50 : AppColors.themeColor),
-                      color: (isGadComplete ?? false) ? AppColors.color5FAC50 : AppColors.white,
+                      border: Border.all(color: (isGadQuestionComplete ?? false) ? AppColors.color5FAC50 : AppColors.themeColor),
+                      color: (isGadQuestionComplete ?? false) ? AppColors.color5FAC50 : AppColors.white,
                       shape: BoxShape.circle,
                     ),
                   ),
@@ -89,8 +89,8 @@ class AnxietyProgressBar extends GetView<AnxietyAnalyticsScreenController> {
                     height: 20,
                     width: 20,
                     decoration: BoxDecoration(
-                      border: Border.all(color: (isGadComplete ?? false) ? (isBaiComplete ?? false) ? AppColors.color5FAC50 : AppColors.themeColor : AppColors.colorD9D9D9),
-                      color: (isBaiComplete ?? false) ? AppColors.color5FAC50 : AppColors.white,
+                      border: Border.all(color: (isGadQuestionComplete ?? false) ? (isBaiQuestionComplete ?? false) ? AppColors.color5FAC50 : AppColors.themeColor : AppColors.colorD9D9D9),
+                      color: (isBaiQuestionComplete ?? false) ? AppColors.color5FAC50 : AppColors.white,
                       shape: BoxShape.circle,
                     ),
                   ),

@@ -19,6 +19,10 @@ class AppAssets {
   static const fingerprintIcon = "${icons}fingerprint_icon.svg";
   static const curatrailTitleWithLogo = "${icons}curatrail_title_withlogo.png";
   static const wavingHandIcon = "${icons}waving_hand_icon.svg";
+  static const aiCoachingIcon = "${icons}ai_coaching_icon.png";
+  static const cbtIcon = "${icons}cbt_icon.png";
+  static const dashboardIcon = "${icons}dashboard_icon.png";
+  static const rewardIcon = "${icons}rewards_icon.png";
 
   /// ------- images
   static const curatrailLogo = "${images}curatrail_logo.png";
