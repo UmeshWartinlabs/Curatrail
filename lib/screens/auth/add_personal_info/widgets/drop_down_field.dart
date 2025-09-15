@@ -13,6 +13,8 @@ class DropDownField extends StatefulWidget {
   final Function(String)? onSelect;
   final TextEditingController? controller;
   final void Function()? onTapDropDown;
+  final TextInputType? keyboardType;
+  final double? width;
 
   const DropDownField({
     super.key,
@@ -25,7 +27,7 @@ class DropDownField extends StatefulWidget {
     this.selectedValue,
     this.type,
     this.maxLine,
-    this.controller,
+    this.controller, this.keyboardType, this.width,
   });
 
   @override
@@ -86,7 +88,7 @@ class _DropDownFieldState extends State<DropDownField> with SingleTickerProvider
         GestureDetector(
           onTap: widget.onTapDropDown,
           child: Container(
-            width: Get.width,
+            width: widget.width ?? Get.width,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(4),
               color: AppColors.colorF3F3F3,
@@ -136,6 +138,7 @@ class _DropDownFieldState extends State<DropDownField> with SingleTickerProvider
                       fontSize: 16,
                       color: AppColors.black,
                     ),
+                    keyboardType: widget.keyboardType,
                     decoration: InputDecoration(
                       hintText: widget.fieldHint,
                       hintStyle: Get.textTheme.titleMedium?.copyWith(

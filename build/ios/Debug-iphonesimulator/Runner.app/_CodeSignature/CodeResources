@@ -46,7 +46,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		xEZoVQs3WeDScccLCiwbxPbpYfc=
+		xK5tgpDLcAqGz8YTJHb6v51Hkrg=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -54,15 +54,15 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		DOm1sIlvXUTVzNOM2lHQH+UrD2s=
+		oRkEkoc/EEjly+MKvZEy1+3xcKM=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
 		<data>
-		3QkaEw0L1cMmx7l0EsOFE6u4vyc=
+		cgY91HZ2Kdcni7LwRvJwRtP++yg=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<data>
-		TPhUx5km79H042ewZ2vIOUFzuuI=
+		6j2KWTAuS5BGVBhxK8h95plqlrg=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
 		<data>
@@ -112,6 +112,10 @@
 		<data>
 		a/ywoukrX7XdheWjmlJebPFWxaw=
 		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/icons/ai_coaching_icon.png</key>
+		<data>
+		3lXyOJx9x0iwx0LuVuuEu7tQuVE=
+		</data>
 		<key>Frameworks/App.framework/flutter_assets/assets/icons/back_icon.svg</key>
 		<data>
 		Wv9bn/48rpvwG69X6ScH+VD534s=
@@ -119,6 +123,10 @@
 		<key>Frameworks/App.framework/flutter_assets/assets/icons/behavioral_therapy_icon.png</key>
 		<data>
 		82AzJGziUL7Dr9YqlH7vo6AAV+c=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/icons/cbt_icon.png</key>
+		<data>
+		0oYzIbhcdocYNgh3PzZt0XgHzHQ=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/assets/icons/chat_with_ai_icon.png</key>
 		<data>
@@ -135,6 +143,10 @@
 		<key>Frameworks/App.framework/flutter_assets/assets/icons/curatrail_title_withlogo.svg</key>
 		<data>
 		+PPsjxFmG2gZxTZ2Vfiro8HGyaQ=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/icons/dashboard_icon.png</key>
+		<data>
+		rRxN8USnMc19Y3mOtZtsxZareOo=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/assets/icons/email_verification_icon.svg</key>
 		<data>
@@ -164,6 +176,10 @@
 		<data>
 		g5ibPuIyYmwX+F34dBKJH1hM3ns=
 		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/icons/rewards_icon.png</key>
+		<data>
+		2c/rPTRXB/Zs5U7uKHE1b2G8z1A=
+		</data>
 		<key>Frameworks/App.framework/flutter_assets/assets/icons/star_badge_icon.png</key>
 		<data>
 		VZLC5ZboTaEchHJlTVs7wOPFe68=
@@ -190,7 +206,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/kernel_blob.bin</key>
 		<data>
-		X4pObdXqW+DyIBXekJJ6DjPq5pY=
+		is9+EDTL9cpU+O22MWwHMFxLX98=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -441,7 +457,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			j0gysrJ+xRemIXZcAcDcRZBGWtQn0XYYFgfGfKM0egA=
+			jCdHMyo88TxAWA+OPofpMJuN7TG1M7M/fs0LsnbsQmc=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -455,21 +471,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OEO7AtR904woG4MJUYlamOG+gswbQDFfzOBzofgt79o=
+			N2CRBlHH1g5rhq9jfQ//4Zul/S744geoMCrZ4BUiWgc=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GKqHzM6mWgHfdlZt6e4IJlWRvmbcBtZ61XAFeYQeC34=
+			AgGOdvIqPOYzh8zycoQrKyFIVPFZpZ57QrHo86MNF08=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			n1utX3ns2O44GvQ0DkVGlcyaEH9YuW1nB19GCMF8bD0=
+			IGLlNCLEGAXIWPDkIa5WMOnHfTWtXu7I1ot4k14QAfU=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
@@ -556,6 +572,13 @@
 			u5L4sBy4hNwSLhC8ws6XVgLKq81YfNceeqFgCsGpt6E=
 			</data>
 		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/icons/ai_coaching_icon.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			hInksRpw8Yz1bC1M4rXIzTzxw0StSu5xY+QcuIZgrh8=
+			</data>
+		</dict>
 		<key>Frameworks/App.framework/flutter_assets/assets/icons/back_icon.svg</key>
 		<dict>
 			<key>hash2</key>
@@ -568,6 +591,13 @@
 			<key>hash2</key>
 			<data>
 			88/6ivrrjHZXUiO9ENedvZ9brITXbqnb8MRP4dtugzQ=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/icons/cbt_icon.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Or6F7MEC4gdSfJU+htno/t06Jbed0scAcuYRFqFzBKU=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/assets/icons/chat_with_ai_icon.png</key>
@@ -596,6 +626,13 @@
 			<key>hash2</key>
 			<data>
 			fdz6nOSX4Dw26asvFakh7u17K9K9NEHxJNl3TC4jNRU=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/icons/dashboard_icon.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			yPNxdD6BGrpBoNdCRRsYZ+K6AYrEvHt3JBGmC/4tLxg=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/assets/icons/email_verification_icon.svg</key>
@@ -647,6 +684,13 @@
 			rqm4h3HiPZhvDtolMDhh+AYHKjGovn9g3gUC+oOdWp8=
 			</data>
 		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/icons/rewards_icon.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			MIWEgMlo87tt9mMfw3N+HTKVigBD11ZVmfT/XLwwEOQ=
+			</data>
+		</dict>
 		<key>Frameworks/App.framework/flutter_assets/assets/icons/star_badge_icon.png</key>
 		<dict>
 			<key>hash2</key>
@@ -693,7 +737,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vIF6GvK+n7s/JvkKSNohE6iFSJG0Q7ZXn5Q0jN3pMEQ=
+			CvCZiw+6nW0pZu6nk3MVjX4SiGbayuCARereSnA1c+s=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>

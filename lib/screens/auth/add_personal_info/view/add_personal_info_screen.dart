@@ -19,10 +19,11 @@ class AddPersonalInfoScreen extends GetView<AddPersonalInfoScreenController> {
       appBar: CommonAppBar(isHideBackButton: true),
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20),
+          padding: EdgeInsets.symmetric(horizontal: 20),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+
               Row(
                 children: [
                   Text(
@@ -32,7 +33,6 @@ class AddPersonalInfoScreen extends GetView<AddPersonalInfoScreenController> {
                       color: AppColors.black,
                     ),
                   ),
-
                   SvgPicture.asset(AppAssets.wavingHandIcon),
                 ],
               ),
@@ -56,29 +56,94 @@ class AddPersonalInfoScreen extends GetView<AddPersonalInfoScreenController> {
                       SizedBox(height: 20),
                   
                       ListView.separated(
-                        physics: const NeverScrollableScrollPhysics(),
+                        physics: NeverScrollableScrollPhysics(),
                         shrinkWrap: true,
                         padding: EdgeInsets.only(bottom: 15),
                         itemBuilder: (context, index) {
-                          return Obx(() => DropDownField(
-                            fieldTitle: controller.allFieldValue[index]["field_title"],
-                            type: controller.allFieldValue[index]["type"],
-                            fieldHint:  controller.allFieldValue[index]["field_hint"],
-                            isDropDownOpen: controller.isDropDownOpen[index],
-                            selectedValue: controller.dropDownController[index].text,
-                            controller: controller.dropDownController[index],
-                            maxLine: 2,
-                            onSelect: (val) {
-                              controller.isDropDownOpen[index] = false;
-                              controller.dropDownController[index].text = val;
-                            },
-                            onTapDropDown: () {
-                              controller.isDropDownOpen[index] = !controller.isDropDownOpen[index];
-                            },
-                            dropDownValue: (controller.allFieldValue[index]["drop_down_value"] as List<dynamic>?)?.map((e) => e.toString()).toList() ?? [],
-                          ));
+                          // check if this is the second last field
+                          if (index == controller.allFieldValue.length - 2) {
+                            return Row(
+                              children: [
+                                Expanded(
+                                  child: Obx(
+                                    () => DropDownField(
+                                      fieldTitle: controller.allFieldValue[index]["field_title"],
+                                      type: controller.allFieldValue[index]["type"],
+                                      fieldHint: controller.allFieldValue[index]["field_hint"],
+                                      isDropDownOpen: controller.isDropDownOpen[index],
+                                      selectedValue: controller.dropDownController[index].text,
+                                      controller: controller.dropDownController[index],
+                                      maxLine: 1,
+                                      keyboardType: controller.allFieldValue[index]["keyboard_type"],
+                                      onSelect: (val) {
+                                        controller.isDropDownOpen[index] = false;
+                                        controller.dropDownController[index].text = val;
+                                      },
+                                      onTapDropDown: () {
+                                        controller.isDropDownOpen[index] = !controller.isDropDownOpen[index];
+                                      },
+                                      dropDownValue: (controller.allFieldValue[index]["drop_down_value"] as List<dynamic>?)?.map((e) => e.toString()).toList() ?? [],
+                                    ),
+                                  ),
+                                ),
+
+                                SizedBox(width: 10),
+
+                                Expanded(
+                                  child: Obx(
+                                    () => DropDownField(
+                                      fieldTitle: controller.allFieldValue[index + 1]["field_title"],
+                                      type: controller.allFieldValue[index + 1]["type"],
+                                      fieldHint: controller.allFieldValue[index + 1]["field_hint"],
+                                      isDropDownOpen: controller.isDropDownOpen[index + 1],
+                                      selectedValue: controller.dropDownController[index + 1].text,
+                                      controller: controller.dropDownController[index + 1],
+                                      maxLine: 1,
+                                      keyboardType: controller.allFieldValue[index + 1]["keyboard_type"],
+                                      onSelect: (val) {
+                                        controller.isDropDownOpen[index + 1] = false;
+                                        controller.dropDownController[index + 1].text = val;
+                                      },
+                                      onTapDropDown: () {
+                                        controller.isDropDownOpen[index + 1] = !controller.isDropDownOpen[index + 1];
+                                      },
+                                      dropDownValue: (controller.allFieldValue[index + 1]["drop_down_value"] as List<dynamic>?)?.map((e) => e.toString()).toList() ?? [],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            );
+                          }
+
+                          if (index == controller.allFieldValue.length - 1) {
+                            return SizedBox.shrink();
+                          }
+
+                          // render normal field
+                          return Obx(
+                            () => DropDownField(
+                              fieldTitle: controller.allFieldValue[index]["field_title"],
+                              type: controller.allFieldValue[index]["type"],
+                              fieldHint: controller.allFieldValue[index]["field_hint"],
+                              isDropDownOpen: controller.isDropDownOpen[index],
+                              selectedValue: controller.dropDownController[index].text,
+                              controller: controller.dropDownController[index],
+                              maxLine: 1,
+                              keyboardType: controller.allFieldValue[index]["keyboard_type"],
+                              onSelect: (val) {
+                                controller.isDropDownOpen[index] = false;
+                                controller.dropDownController[index].text = val;
+                              },
+                              onTapDropDown: () {
+                                controller.isDropDownOpen[index] = !controller.isDropDownOpen[index];
+                              },
+                              dropDownValue: (controller.allFieldValue[index]["drop_down_value"] as List<dynamic>?)?.map((e) => e.toString()).toList() ?? [],
+                            ),
+                          );
                         },
-                        separatorBuilder: (context, index) => const SizedBox(height: 10),
+                        separatorBuilder: (context, index) => index == controller.allFieldValue.length - 2
+                            ? SizedBox.shrink()
+                            : SizedBox(height: 10),
                         itemCount: controller.allFieldValue.length,
                       ),
                     ],
@@ -96,12 +161,10 @@ class AddPersonalInfoScreen extends GetView<AddPersonalInfoScreenController> {
                     String selectedValue = controller.dropDownController[i].text;
 
                     debugPrint("Index $i → $fieldTitle : $selectedValue");
-
-                    Get.toNamed(AppRoutes.anxietyAnalyticsScreen);
                   }
+                  Get.toNamed(AppRoutes.anxietyAnalyticsScreen);
                 },
               ),
-
             ],
           ),
         ),

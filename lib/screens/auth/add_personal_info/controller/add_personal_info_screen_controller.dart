@@ -107,9 +107,22 @@ class AddPersonalInfoScreenController extends GetxController {
       ],
     },
     {
-      "field_title" : AppStrings.location.tr,
-      "field_hint" : AppStrings.enterYourLocation.tr,
+      "field_title" : AppStrings.zipCode.tr,
+      "field_hint" : AppStrings.enterYourZipCode.tr,
       "type" : "textfield",
+      "keyboard_type" : TextInputType.number,
+    },
+    {
+      "field_title" : AppStrings.city.tr,
+      "field_hint" : AppStrings.enterCity.tr,
+      "type" : "textfield",
+      "keyboard_type" : TextInputType.text,
+    },
+    {
+      "field_title" : AppStrings.country.tr,
+      "field_hint" : AppStrings.enterCountry.tr,
+      "type" : "textfield",
+      "keyboard_type" : TextInputType.text,
     }
   ];
 

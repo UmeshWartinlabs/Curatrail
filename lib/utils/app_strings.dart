@@ -104,8 +104,12 @@ class AppStrings {
   static const selectOccupation = "Select Occupation";
   static const socialEconomicStatus = "Social Economic Status";
   static const selectEconomicStatus = "Select Economic Status";
-  static const location = "Location";
-  static const enterYourLocation = "Enter your location";
+  static const zipCode = "Zip Code";
+  static const enterYourZipCode = "Enter Zip code";
+  static const city = "City";
+  static const enterCity = "Enter City";
+  static const country = "Country";
+  static const enterCountry = "Enter Country";
 
   static const male = "Male";
   static const female = "Female";
